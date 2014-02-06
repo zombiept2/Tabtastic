@@ -1,0 +1,34 @@
+<html>
+<head>
+	<link type="text/css" href="includes/jquery.tabtastic.css" media="screen" rel="Stylesheet" />
+	<script type="text/javascript" src="includes/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="includes/jquery.tabtastic.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //tabtastic
+            $('#tabtastic').tabtastic();
+            $(document).tabtastic('createLinks');
+        });
+    </script>
+</head>
+<body>
+	<table cellpadding="4" cellspacing="0" width="100%">
+        <tr>
+            <td width="120px" valign="top">
+                <div style="padding:10px;">
+                    <a href="javascript:$('#tabtastic').tabtastic('add', { title: 'Tab 1', src: 'tabs/tab1.html', sticky: 'false' });">Tab 1</a>
+                    <br />
+                    <a href="javascript:$('#tabtastic').tabtastic('add', { title: 'Tab 2', src: 'tabs/tab2.html', sticky: 'false' });">Tab 2</a>
+                    <br />
+                    <a href="javascript:$('#tabtastic').tabtastic('add', { title: 'Tab 3', src: 'tabs/tab3.html', sticky: 'false' });">Tab 3</a>
+                    <br />
+                    <a href="javascript:$('#tabtastic').tabtastic('add', { title: 'Tab 4', src: 'tabs/tab4.html', sticky: 'false' });">Tab 4</a>
+                </div>
+            </td>
+            <td width="850px">
+                <div id="tabtastic" style="border:solid 1px #666666;"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
